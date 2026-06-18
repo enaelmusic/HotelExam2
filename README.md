@@ -10,12 +10,15 @@ Consignes :
 - Les classes doivent être réutilisables (pas de lambdas !)
 Créez une application type console avec le logiciel Eclipse en suivant scrupuleusement les étapes ci-dessous.
 Le but est de simuler le chargement/déchargement de camion.
+<br>
 Chaque camion peut contenir un poids maximum exprimé en kg (nombre entier) et un volume maximum exprimé en m3 (nombre décimal avec précision au dixième).
 Deux types de matériel seront chargés dans le camion : palette et/ou vrac. Néanmoins, il ne faut pas exclure d’autres types à l’avenir et nous pouvons considérer comme « Chargeable », tout type de matériel capable de donner un volume, un poids et un identifiant unique (String).
+<br>
 Le chargement et déchargement se fait toujours par l’intermédiaire d’un « loadmaster ». Il est unique par camion, mais un loadmaster (LM) peut s’occuper de plusieurs camions (veillez à toujours n’avoir qu’une instance dans votre programme). Commentez votre code qui concerne le LM sous forme de JavaDoc.
 Si le LM essaye de charger et que le poids maximum est dépassé, une exception
 « MaxWeightReachedException » doit être levée. Celle-ci est capable de donner le matériel qui ne peut pas être chargé.
 Créez une interface CamionLeger et une interface CamionLourd.
+<br>
 Si le LM essaye de charger et que le volume maximum est dépassé, une exception
 « MaxVolumeReachedException » doit être levée (contenant le matériel ne pouvant pas être chargé).
 Le camion doit pouvoir donner à tout moment (au minimum) :
