@@ -8,26 +8,24 @@ Consignes :
 - La partie « pratique » se fait sur l’ordinateur qui vous est assigné par l’enseignant
 - Utilisation IA interdite (chatGPT...)
 - Les classes doivent être réutilisables (pas de lambdas !)
+
+
 Créez une application type console avec le logiciel Eclipse en suivant scrupuleusement les étapes ci-dessous.
-Le but est de simuler le chargement/déchargement de camion.
+Nous allons modéliser les premières étapes d’un logiciel de gestion d’hôtel.
 
-Chaque camion peut contenir un poids maximum exprimé en kg (nombre entier) et un volume maximum exprimé en m3 (nombre décimal avec précision au dixième).
-Deux types de matériel seront chargés dans le camion : palette et/ou vrac. Néanmoins, il ne faut pas exclure d’autres types à l’avenir et nous pouvons considérer comme « Chargeable », tout type de matériel capable de donner un volume, un poids et un identifiant unique (String).
+Une chambre/suite comporte un identifiant unique, un étage, une catégorie (LUXE, GRAND_LUXE, IMPERIAL), 
+un nombre maximum de personnes et une description.
+Chaque chambre/suite peut accueillir des personnes. Chaque personne est identifiée par un numéro de registre national, un nom, un prénom et une date de naissance.
+La « Map » est imposée comme structure de données pour les chambres et personnes.
 
-Le chargement et déchargement se fait toujours par l’intermédiaire d’un « loadmaster ». Il est unique par camion, mais un loadmaster (LM) peut s’occuper de plusieurs camions (veillez à toujours n’avoir qu’une instance dans votre programme). Commentez votre code qui concerne le LM sous forme de JavaDoc.
-Si le LM essaye de charger et que le poids maximum est dépassé, une exception
-« MaxWeightReachedException » doit être levée. Celle-ci est capable de donner le matériel qui ne peut pas être chargé.
-Créez une interface CamionLeger et une interface CamionLourd.
+L’utilisateur doit pouvoir ajouter des chambres.
+Une personne doit pouvoir être ajouté à une chambre déjà existante.
+Une exception ChambreFullException doit être lancée si on essaie d’ajouter plus de personnes que le montant maximum par chambre.
+L’hôtel doit pouvoir fournir le nombre de personnes.
+L’hôtel doit pouvoir donner la liste des personnes, triées par chambre ou trié par nom de famille. L’hôtel doit pouvoir donner la liste des personnes qui ont moins de 18 ans, triée par nom de famille.
 
-Si le LM essaye de charger et que le volume maximum est dépassé, une exception
-« MaxVolumeReachedException » doit être levée (contenant le matériel ne pouvant pas être chargé).
-Le camion doit pouvoir donner à tout moment (au minimum) :
-- Poids du chargement
-- Volume du chargement
-- Liste du chargement trié par identifiant
-- Liste du chargement trié par poids croissant
-- Liste du chargement trié par volume croissant
-Faites le maximum de tests concernant l’ajout de matériel au camion.
+Créez un Singleton utilitaires qui imprime à la console les différents retours de méthodes. Commentez (JavaDoc) uniquement les éléments qui font de votre classe un Singleton.
+Créez une classe Test (JUnit) et testez que votre Singleton est bien un Singleton (une seule méthode à tester).
 
 Le prof souhaite entrainné sur l'utilisation de collection SET ou MAP
 
