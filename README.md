@@ -31,3 +31,5 @@ Le prof souhaite entrainné sur l'utilisation de collection SET ou MAP
 
 ## focus on object use
 on focus sur la manipulation d'objet, il y a plusieur facon de configurer les paramètre d'objet.
+
+<a href=""> rédigez une issue</a> si vous rencontrez un probleme.
