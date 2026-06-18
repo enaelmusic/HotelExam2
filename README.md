@@ -1,6 +1,6 @@
-## Question Exam OO -EAFCEVERE
+# Question Exam OO -EAFCEVERE
 voici une resolution de l'énnoncé suivant 
-# ennoncé
+## ennoncé
 Consignes :
 - Pas de documentation et/ou papiers autres que ceux distribués par l’enseignant
 - Pas de téléphone, tablette ou autres objets connectés (montres...)
@@ -25,6 +25,8 @@ Le camion doit pouvoir donner à tout moment (au minimum) :
 - Liste du chargement trié par poids croissant
 - Liste du chargement trié par volume croissant
 Faites le maximum de tests concernant l’ajout de matériel au camion.
+
+Le prof souhaite entrainné sur l'utilisation de collection SET ou MAP
 
 ## focus on object use
 on focus sur la manipulation d'objet, il y a plusieur facon de configurer les paramètre d'objet.
